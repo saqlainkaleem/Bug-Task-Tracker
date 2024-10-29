@@ -1,0 +1,163 @@
+/* Task List and Card Styles */
+.task-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	padding-top: 1rem;
+	justify-content: center;
+	width: 100%;
+}
+
+.task-card {
+	background-color: #f9f9f9;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.task-card:hover {
+	transform: translateY(-3px);
+}
+
+.task-card h3 {
+	font-size: 1.3rem;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.task-card p {
+	color: #666;
+	font-size: 0.9rem;
+	margin: 0.5rem 0;
+}
+
+/* Task Actions */
+.task-actions button {
+	background-color: #4e54c8;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	padding: 0.5rem 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.task-actions button:hover {
+	background-color: #3d43b0;
+}
+
+/* Filter & Sort Container */
+.filter-sort-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.filter-group {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.filter-group label {
+	font-size: 0.9rem;
+	color: #555;
+}
+
+.filter-group select {
+	padding: 0.5rem;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+	.task-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.task-card h3 {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.task-list {
+		grid-template-columns: 1fr;
+	}
+
+	.filter-sort-container {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.filter-group select {
+		width: 100%;
+	}
+
+	.task-card {
+		padding: 0.5rem;
+		width: 100%;
+	}
+
+	.task-card h3 {
+		font-size: 1.1rem;
+	}
+
+	.task-card p {
+		font-size: 0.85rem;
+	}
+
+	.task-actions button {
+		font-size: 0.85rem;
+		padding: 0.4rem 0.6rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.task-list {
+		width: 100%;
+		padding: 0;
+	}
+
+	.task-card {
+		padding: 0.5rem;
+		width: 100%;
+		box-shadow: none;
+	}
+
+	.task-card h3 {
+		font-size: 1rem;
+	}
+
+	.task-card p {
+		font-size: 0.8rem;
+	}
+
+	.task-actions button {
+		padding: 0.3rem 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.filter-group label {
+		font-size: 0.85rem;
+	}
+
+	.filter-group select {
+		font-size: 0.85rem;
+		padding: 0.4rem;
+		width: 100%;
+	}
+}

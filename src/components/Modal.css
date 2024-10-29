@@ -1,0 +1,127 @@
+/* Modal Fields */
+.modal-field {
+	margin-bottom: 1rem;
+}
+
+.modal-field label {
+	display: block;
+	font-size: 0.9rem;
+	color: #333;
+	margin-bottom: 0.3rem;
+}
+
+.modal-field input,
+.modal-field select,
+.modal-field textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+}
+
+/* Save Button */
+.save-button {
+	background-color: #4e54c8;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.save-button:hover {
+	background-color: #4e54c8;
+}
+
+/* Modal Header and Body */
+.modal-header h3 {
+	font-size: 1.5rem;
+	color: #333;
+	margin: 0;
+}
+
+.modal-header .task-status {
+	font-size: 1rem;
+	color: #4e54c8;
+	margin-top: 0.2rem;
+	font-weight: bold;
+}
+
+.modal-body p {
+	color: #555;
+	margin: 0.5rem 0;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.modal-body strong {
+	color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.modal-content {
+		padding: 1.5rem;
+	}
+}
+.error-message {
+	color: red;
+}
+.modal-body {
+	padding: 1rem;
+}
+
+.task-details {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+/* Style for each detail item */
+.detail-item {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+.detail-label {
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.task-details {
+		grid-template-columns: 1fr;
+	}
+
+	.modal-content {
+		width: 70%;
+		max-width: 70%;
+	}
+}
+
+@media (max-width: 480px) {
+	.modal-header h3 {
+		font-size: 1.5rem;
+	}
+
+	.modal-body {
+		padding: 0.5rem;
+	}
+
+	.detail-item {
+		padding: 0.5rem;
+	}
+
+	.detail-label {
+		font-size: 0.9rem;
+	}
+}
