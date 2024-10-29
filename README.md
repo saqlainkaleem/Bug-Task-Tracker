@@ -21,7 +21,7 @@ Live Demo: [Bug Task Tracker](https://bug-task-tracker.netlify.app/)
 
 - It assumes that users will enter valid data when creating or updating tasks.
 - It does not include a backend service; all data handling is done within the client.
-- 
+
 ## Tech Stack
 
 - **Frontend**: React, Redux, CSS
