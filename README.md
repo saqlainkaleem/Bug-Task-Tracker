@@ -29,7 +29,7 @@ Live Demo: [Bug Task Tracker](https://bug-task-tracker.netlify.app/)
 - **UI Library**: React Icons
 - **Notifications**: React Toastify
 - **Deployment**:  Hosted on Netlify
-  
+
 ## Usage
 
 1. **Login**: Start by logging into the app using the login form.
