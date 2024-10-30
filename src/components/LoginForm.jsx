@@ -50,6 +50,17 @@ function LoginForm() {
 					Login
 				</button>
 			</form>
+			<div className="demo-credentials">
+				<p>
+					<strong>Demo Credentials:</strong>
+				</p>
+				<p>
+					Email: <code>user@example.com</code>
+				</p>
+				<p>
+					Password: <code>password123</code>
+				</p>
+			</div>
 		</div>
 	);
 }
